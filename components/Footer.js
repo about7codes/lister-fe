@@ -23,8 +23,9 @@ const Footer = () => {
             </ul>
 
             <div className="to-top">
-            <a className="rocket" href="#intro">
+            <a className="rocket" href="#navbar">
                 {/* <img src="/earth.png" alt="ico" /> <br /> */}
+                <i className="rocket-ico fas fa-rocket"></i>
                 <p id="trick">Beam me up, Scotty!</p>
             </a>
             </div>

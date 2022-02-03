@@ -34,7 +34,7 @@ const Navbar = () => {
   };
   
   return (
-    <div className='navbar'>
+    <div className='navbar' id='navbar'>
         <nav className='nav'>
             <div className="logo">
                 <Link href="/">

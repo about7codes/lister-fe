@@ -144,6 +144,11 @@ footer .social-btns {
   opacity: 1;
 }
 
+.rocket-ico {
+  font-size: 22px;
+  transform: rotate(-45deg);
+}
+
 footer .copyright {
   text-align: center;
   margin: 0 0 0;
