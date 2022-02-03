@@ -14,3 +14,216 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.layout {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.main {
+  padding: 0 2rem;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+/* Navbar Styles below   */
+
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height: 4rem;
+  background-color: #fff;
+  /* border-bottom: 1px solid #eaeaea; */
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+}
+
+.logo a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.links a {
+  cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Footer Styles below   */
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #222;
+  color: #fff;
+}
+
+footer .social-btns {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.social-btns .social-btn {
+  padding: 12px 14px;
+  background: #333;
+  margin: 2px;
+  text-align: center;
+  transition: ease-in-out 0.3s;
+}
+
+.social-btn a {
+  color: #fff;
+}
+
+.social-btn:first-child:hover {
+  background-color: #55acee;
+  transform: scale(1.1);
+}
+
+.social-btn:nth-child(2):hover {
+  background-color: #0077b5;
+  transform: scale(1.1);
+}
+
+.social-btn:nth-child(3):hover {
+  background-color: #2edb59;
+  transform: scale(1.1);
+}
+
+.social-btn:nth-child(4):hover {
+  background-color: #574b90;
+  transform: scale(1.1);
+}
+
+.social-btn:last-child:hover {
+  background-color: #4183c4;
+  transform: scale(1.1);
+}
+
+.to-top {
+  text-align: center;
+}
+
+.to-top img {
+  width: 50px;
+  height: 50px;
+  margin-top: 10px;
+}
+
+.to-top #trick {
+  opacity: 0;
+  color: #fff;
+  transition: 0.5s ease;
+  font: 12px "Lato", sans-serif;
+  margin: 0 0 10px;
+}
+.rocket:hover #trick {
+  opacity: 1;
+}
+
+footer .copyright {
+  text-align: center;
+  margin: 0 0 0;
+  font: 14px "Lato", sans-serif;
+  color: #aaa;
+  font-weight: 300;
+}
+
+/* Addnote styles below */
+
+.form {
+  display: flex;
+  transition: all 0.2s ease;
+}
+
+.form:focus-within {
+  box-shadow: 0 3px 5px -2px rgba(0, 0, 0, 0.3);
+}
+
+.form input {
+  flex: 1;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  /* background-color: white; */
+  background: #d5d7de;
+  padding: 0 10px;
+  /* min-width: 350px; */
+}
+
+.form button {
+  appearance: none;
+  border: 0;
+  outline: 0;
+  height: 40px;
+  /* background-color: white; */
+  background: #d5d7de;
+  padding: 0 10px;
+  cursor: pointer;
+}
+
+/* Note style below */
+
+.note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  animation: poof 0.5s forwards;
+}
+.note-a {
+  flex: 1;
+  appearance: none;
+  border: 0;
+  outline: 0;
+  height: 22px;
+  font-size: 16px;
+  background-color: white;
+}
+.note-b {
+  cursor: pointer;
+}
+.note-c {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Keyframes  */
+
+@keyframes poof {
+  0% {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}

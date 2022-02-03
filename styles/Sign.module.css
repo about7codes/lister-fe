@@ -1,0 +1,64 @@
+.sign {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.signInner {
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.formGroup label {
+  margin-bottom: 3px;
+  display: block;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.formControl {
+  /* font-family: var(--cp-font-family); */
+  font-size: 1.3rem;
+  -webkit-appearance: none;
+  padding: 10px;
+  outline: 0;
+  background: #d5d7de;
+  border: 3px solid #d5d7de;
+  border-radius: 3px;
+}
+
+.formControl:focus {
+  border-color: #717790;
+  background: #fff;
+}
+
+.submit {
+  -webkit-appearance: none;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  position: relative;
+  font-family: inherit;
+  font-size: 1rem;
+  text-shadow: none;
+  line-height: 1.2;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-decoration: none !important;
+  font-weight: 400 !important;
+  cursor: pointer;
+  background: #47cf73;
+  color: #000;
+  padding: 10px 16px;
+  border-radius: 4px;
+  border: 3px solid transparent;
+}
